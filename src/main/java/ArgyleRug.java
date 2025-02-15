@@ -1,19 +1,26 @@
 package main.java;
 
-public class PlaidRug {
+public class ArgyleRug {
     public static void main(String[] args){
         String[][] emoji = new String[11][11];
 
-        for (int i = 0; i < emoji.length; i++){
+        for (int i = 0; i < emoji.length; i++) {
             for (int j = 0; j < emoji[i].length; j++) {
-                if ((j % 2 == 0) && (i % 2 ==0)){
-                    emoji[i][j] = "🌀"; 
-                }
-                else{
-                    emoji[i][j] = "🍓";
-                }
+                emoji[i][j] = "🍓"; 
             }
         }
+        for (int i = 0; i < emoji.length; i++) {
+            for (int j = 0; j < emoji[i].length; j++) {
+                if (i==j||i + j == emoji[i].length - 1|| i + j == 10 || i + j == 5 || i + j == 15 || j - i == 5 || i - j == 5){
+                    emoji[i][j] = "🌿"; // Diamond patter
+                }
+                else {
+                    emoji[i][j] = "🍓"; // Background filler
+                }
+            
+            }
+        }
+
         print2DArray(emoji);
     }
 

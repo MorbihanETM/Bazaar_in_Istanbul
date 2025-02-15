@@ -7,10 +7,10 @@ public class VerticalRug {
         for (int i = 0; i < emoji.length; i++){
             for (int j = 0; j < emoji[i].length; j++) {
                 if (j % 2 == 0) {
-                    emoji[i][j] = "🌿"; 
+                    emoji[i][j] = "💌"; 
                 }
                 else{
-                emoji[i][j] = "🍓";
+                emoji[i][j] = "💗";
                 }
             }
         }

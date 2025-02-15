@@ -7,7 +7,7 @@ public class SolidRug{
 
         for (int i = 0; i < emoji.length; i++){
             for (int j = 0; j < emoji[i].length; j++) {
-                emoji[i][j] = "🌿";
+                emoji[i][j] = "🧿";
             }
         }
         print2DArray(emoji);
